@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 //@FeignClient(name = "product-service")
 @RequestMapping(value = "/products")
 public interface ProductClient {
-    @GetMapping(value = "/{id}")
-    public ResponseEntity<Product> getProduct(@PathVariable ("id") Long id);
+    //@GetMapping(value = "/{id}")
+    //public ResponseEntity<Product> getProduct(@PathVariable ("id") Long id);
 
-    @GetMapping(value = "/{id}/stock")
-    public ResponseEntity<Product> updateStockProduct(@PathVariable  Long id ,@RequestParam(name = "quantity", required = true) Double quantity);
+    //@GetMapping(value = "/{id}/stock")
+    //public ResponseEntity<Product> updateStockProduct(@PathVariable  Long id ,@RequestParam(name = "quantity", required = true) Double quantity);
 }

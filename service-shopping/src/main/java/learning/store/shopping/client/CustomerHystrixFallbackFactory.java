@@ -3,8 +3,8 @@ package learning.store.shopping.client;
 import learning.store.shopping.model.Customer;
 import org.springframework.http.ResponseEntity;
 
-public class CustomerHystrixFallbackFactory implements  CustomerClient{
-    @Override
+public class CustomerHystrixFallbackFactory{
+    /*@Override
     public ResponseEntity<Customer> getCustomer(long id) {
         Customer customer = Customer.builder()
                 .firstName("none")
@@ -12,5 +12,5 @@ public class CustomerHystrixFallbackFactory implements  CustomerClient{
                 .email("none")
                 .photoUrl("none").build();
         return ResponseEntity.ok(customer);
-    }
+    }*/
 }
