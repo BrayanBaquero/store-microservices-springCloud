@@ -14,14 +14,14 @@ spring:
           enabled: true
       routes:
         - id: customer-service
-         uri: lb://customer-service
-         predicates: 
-          - Path=/customer/**
+          uri: lb://customer-service
+          predicates: 
+            - Path=/customer/**
         - id: product-service
-         uri: lb://product-service
-         predicates: 
-          - Path=/product/**
+          uri: lb://product-service
+          predicates: 
+            - Path=/product/**
         - id: shopping-service
-         uri: lb://shopping-service
-         predicates: 
-          - Path=/invoices/**
+          uri: lb://shopping-service
+          predicates: 
+            - Path=/invoices/**
