@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import learning.store.product.entity.Category;
 import learning.store.product.entity.Product;
 import learning.store.product.service.IProductService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Slf4j
 @RestController
 @RequestMapping("/products")
 public class ProductController {
